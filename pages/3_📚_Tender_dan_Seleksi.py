@@ -40,43 +40,15 @@ with open('style.css') as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Konfigurasi variabel lokasi UKPBJ
-daerah =    ["PROV. KALBAR", "KOTA PONTIANAK", "KAB. KUBU RAYA", "KAB. MEMPAWAH", "KOTA SINGKAWANG", "KAB. SAMBAS", 
-            "KAB. BENGKAYANG", "KAB. LANDAK", "KAB. SANGGAU", "KAB. SEKADAU", "KAB. SINTANG", "KAB. MELAWI", "KAB. KAPUAS HULU", 
-            "KAB. KAYONG UTARA", "KAB. KETAPANG"]
+daerah =    ["PROV. Kalsel",  "Kab. Balangan"]
 
-tahuns = [2022, 2023]
+tahuns = [2022, 2023, 2024]
 
 pilih = st.sidebar.selectbox("Pilih UKPBJ yang diinginkan :", daerah)
 tahun = st.sidebar.selectbox("Pilih Tahun :", tahuns)
 
-if pilih == "KAB. BENGKAYANG":
-    kodeFolder = "bky"
-elif pilih == "KAB. KAPUAS HULU":
-    kodeFolder = "kph"
-elif pilih == "KAB. KAYONG UTARA":
-    kodeFolder = "kku"
-elif pilih == "KAB. KETAPANG":
-    kodeFolder = "ktp"
-elif pilih == "KAB. KUBU RAYA":
-    kodeFolder = "kkr"
-elif pilih == "KAB. LANDAK":
-    kodeFolder = "ldk"
-elif pilih == "KAB. MELAWI":
-    kodeFolder = "mlw"
-elif pilih == "KAB. MEMPAWAH":
-    kodeFolder = "mpw"
-elif pilih == "KAB. SAMBAS":
-    kodeFolder = "sbs"
-elif pilih == "KAB. SANGGAU":
-    kodeFolder = "sgu"
-elif pilih == "KAB. SEKADAU":
-    kodeFolder = "skd"
-elif pilih == "KAB. SINTANG":
-    kodeFolder = "stg"
-elif pilih == "KOTA PONTIANAK":
-    kodeFolder = "ptk"
-elif pilih == "KOTA SINGKAWANG":
-    kodeFolder = "skw"
+if pilih == "KAB. BALANGAN":
+    kodeFolder = "blg"
 elif pilih == "PROV. KALBAR":
     kodeFolder = "prov"
 
